@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/dialog_padding"
+              android:gravity="center">
+
+    <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_lose"
+            android:contentDescription="@string/image_description_win_icon"/>
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_icon_top_margin"
+            android:textColor="@color/lossTextColor"
+            android:textStyle="bold"
+            android:text="@string/you_lose"/>
+
+    <Button
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="@dimen/dialog_button_height"
+            android:id="@+id/bt_try_again"
+            android:layout_marginTop="@dimen/dialog_button_top_margin"
+            android:textColor="@color/lossButtonTextColor"
+            android:background="@color/lossButtonBGColor"
+            android:text="@string/try_again"/>
+
+    <com.facebook.share.widget.ShareButton
+        android:id="@+id/facebook_share_btn"
+        android:layout_marginTop="@dimen/dialog_button_top_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        android:contentDescription="@string/share" />
+
+    <TextView
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="@dimen/dialog_button_height"
+            android:id="@+id/bt_back"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dialog_back_button_top_margin"
+            android:text="@string/back_to_home"
+            android:textColor="@color/backButtonColor"
+    />
+
+</LinearLayout>

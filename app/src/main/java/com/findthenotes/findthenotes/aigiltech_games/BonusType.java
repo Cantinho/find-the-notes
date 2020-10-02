@@ -1,0 +1,20 @@
+package com.findthenotes.findthenotes.aigiltech_games;
+
+/**
+ * Created by samir on 05/01/2016.
+ */
+public enum BonusType {
+
+    EMPTY,
+    MORE_5_SECONDS,
+    MORE_10_SECONDS,
+    MORE_15_SECONDS,
+    DOUBLE_SPERM_SCORE_FOR_10_SECONDS,
+    TRIPLICATE_SPERM_SCORE_FOR_10_SECONDS,
+    ADD_03_PERCENT_TO_SPERM_BALLS,
+    ADD_05_PERCENT_TO_SPERM_BALLS,
+    ADD_10_PERCENT_TO_SPERM_BALLS,
+    DOUBLE_PERCENTAGE_OF_CUMSHOT_ON_CONSUME
+
+}
+

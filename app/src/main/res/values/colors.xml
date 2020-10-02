@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF9630</color>
+    <color name="colorPrimaryDark">#56000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pointBar">#FF9630</color>
+    <color name="keyColor">#FcFcFe</color>
+    <color name="keyStrokeColor">#E2E2E2</color>
+    <color name="noteLetterColor">@android:color/white</color>
+    <color name="noteTextColor">@android:color/white</color>
+    <color name="winTextColor">#53ce74</color>
+    <color name="lossTextColor">#ea324a</color>
+    <color name="winButtonBGColor">#53ce74</color>
+    <color name="lossButtonBGColor">#53ce74</color>
+    <color name="winButtonTextColor">@android:color/white</color>
+    <color name="lossButtonTextColor">@android:color/white</color>
+    <color name="backButtonColor">@android:color/black</color>
+    <color name="cardsCount">#FF9630</color>
+    <color name="transparent">#00000000 </color>
+    <color name="black_overlay">#66000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="smallCircleColor">#FFDF8D81</color>
+    <color name="largeCircleColor">#FFAF3854</color>
+    <color name="outerCircleColor">#FFFF9630</color>
+    <color name="worldNameColor">#FFF2FA0F</color>
+    <color name="trainingNotesColor">#FF000000</color>
+    <color name="black">#FF000000</color>
+
+
+</resources>

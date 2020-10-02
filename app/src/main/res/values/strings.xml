@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Find The Notes</string>
+    <string name="app_title">Find The Notes</string>
+    <string name="app_content_description">It is an educational music game to help young musicians learn and recognize musical notes.</string>
+    <string name="company_internet_address">http://www.apprimority.com</string>
+    <string name="app_icon_address">http://apprimority.com/find_notes_facebook.jpg</string>
+
+
+
+    <string name="points_preference">com.findthenotes.points</string>
+    <string name="facebook_app_id">968533203263925</string>
+    <string name="facebook_button_login">CONECTAR COM FACEBOOK</string>
+    <string name="facebook_button_logout">DESCONECTAR DO FACEBOOK</string>
+    <string name="button_login_connect">ENTRAR SEM CONECTAR</string>
+    <string name="world_image_description">World Image</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Desconectar</string>
+    <string name="action_about">Sobre</string>
+    <string name="your_points">SEUS PONTOS</string>
+    <string name="global_position">POSIÇÃO GERAL</string>
+
+
+    <string name="level">Nível:</string>
+
+    <string name="training">Treino</string>
+    <string name="easily">Facílimo</string>
+    <string name="easy">Fácil</string>
+    <string name="medium">Médio</string>
+    <string name="hard">Difícil</string>
+    <string name="expert">Mestre</string>
+    <string name="extreme">Extremo</string>
+    <string name="absolute">Absoluto</string>
+    <!--<string name="extreme">Expertise</string>-->
+
+    <string name="training_world">TREINO</string>
+    <string name="easy_world_one">1 NOTA</string>
+    <string name="easy_world_two">2 NOTAS</string>
+    <string name="medium_world_one">3 NOTAS</string>
+    <string name="medium_world_two">4 NOTAS</string>
+    <string name="hard_world_one">5 NOTAS</string>
+    <string name="hard_world_two">6 NOTAS</string>
+    <string name="very_hard_world_one">7 NOTAS</string>
+    <string name="very_hard_world_two">7 NOTAS</string>
+    <string name="expert_world">MESTRE</string>
+    <string name="extreme_world">EXTREMO</string>
+    <string name="absolute_world">ABSOLUTO</string>
+    <string name="do_letter">C</string>
+    <string name="do_text">DÓ</string>
+    <string name="re_letter">D</string>
+    <string name="mi_letter">E</string>
+    <string name="fa_letter">F</string>
+    <string name="so_letter">G</string>
+    <string name="la_letter">A</string>
+    <string name="si_letter">B</string>
+    <string name="re_text">RÉ</string>
+    <string name="mi_text">MI</string>
+    <string name="fa_text">FÁ</string>
+    <string name="sol_text">SOL</string>
+    <string name="la_text">LÁ</string>
+    <string name="si_text">SI</string>
+    <string name="give_up">Desistir</string>
+    <string name="congratulations_you_win">PARABÉNS!</string>
+    <string name="image_description_star">Estrela</string>
+    <string name="image_description_win_icon">Icone vitória</string>
+    <string name="next_challenge">PRÓXIMO DESAFIO</string>
+    <string name="back_to_home"><b><u>VOLTAR PARA HOME</u></b></string>
+    <string name="you_lose">ERROU!</string>
+    <string name="try_again">TENTAR NOVAMENTE</string>
+
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!- -->
+    <string name="banner_interstitial_ad_unit_id">ca-app-pub-6808975910870303/3651643078</string>
+
+    <!-- -
+        This is an ad unit ID for an interstitial test ad. Replace with your own interstitial ad unit id.
+        For more information, see https://support.google.com/admob/answer/3052638
+    <!-  -->
+    <string name="video_interstitial_ad_unit_id">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="intersticial_find_the_notes_all_types">ca-app-pub-6808975910870303/6901207079</string>
+    <string name="interstitial_image_find_the_notes">ca-app-pub-6808975910870303/2331406671</string>
+
+    <string name="do_sus_image_description">do sus</string>
+    <string name="re_sus_image_description">re sus</string>
+    <string name="fa_sus_image_description">fa sus</string>
+    <string name="la_sus_image_description">la sus</string>
+    <string name="sol_sus_image_description">sol sus</string>
+
+    <string name="title_activity_apprimority_splash">ApprimoritySplashActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="heart_content_description">Vida</string>
+    <string name="steps_image_content_description">fase steps</string>
+    <string name="cards_image_content_description">cards</string>
+
+
+    <!--
+        Splash mensagens
+    -->
+    <string name="tips_01">Desafie seus amigos e veja quem tem o ouvido melhor.</string>
+    <string name="tips_02">Conquiste estrelas nos diversos mundos para ganhar troféus.</string>
+    <string name="tips_03">Aquecendo cordas vocais.</string>
+    <string name="tips_04">Afinando instrumentos.</string>
+    <string name="tips_05">Quem canta seus males espanta.</string>
+    <string name="tips_06">BBBIIIIRRLLLLLL</string>
+    <string name="tips_07">Elvis não morreu, só voltou pra casa.</string>
+    <string name="star_title">Estrelas</string>
+    <string name="share">Compartilhar</string>
+    <string name="leave">Sair</string>
+    <string name="about_description">Esse jogo foi desenvolvido pela equipe da APPrimority.</string>
+    <string name="about_email">apprimority@gmail.com</string>
+    <string name="about_site_address">WWW.APPRIMORITY.COM.BR</string>
+
+    <string-array name="tips_array">
+        <item>@string/tips_01</item>
+        <item>@string/tips_02</item>
+        <item>@string/tips_03</item>
+        <item>@string/tips_04</item>
+        <item>@string/tips_05</item>
+        <item>@string/tips_06</item>
+        <item>@string/tips_07</item>
+    </string-array>
+
+</resources>

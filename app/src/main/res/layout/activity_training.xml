@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/bg_main"
+    tools:ignore="NestedWeights"
+    android:fitsSystemWindows="true"
+    tools:context=".view.WorldActivity">
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@android:color/transparent">
+
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/world_image_description"
+                    android:layout_gravity="center"
+                    android:src="@mipmap/img_logo_actionbar"
+                    android:id="@+id/stage_activity_title"
+            />
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/toolbar"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:weightSum="1">
+
+
+            <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.26">
+
+                <ImageView
+                        android:id="@+id/play_note"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/img_play"
+                        android:contentDescription="@string/world_image_description"
+                        android:visibility="visible"
+                        android:layout_below="@+id/heart_second"
+                        android:layout_marginTop="2dp"
+                        android:layout_centerHorizontal="true"/>
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New Text"
+                        android:visibility="invisible"
+                        android:id="@+id/cards_count"
+                        android:layout_toRightOf="@+id/imageView"
+                        android:layout_toEndOf="@+id/imageView"
+                        android:layout_alignBottom="@+id/imageView"
+                        android:gravity="center"
+                        android:textColor="@color/cardsCount"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_alignParentTop="true"
+                />
+
+                <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:id="@+id/linearLayout2">
+
+                </LinearLayout>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_heart_active"
+                        android:visibility="invisible"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/heart_first"
+                        android:contentDescription="@string/heart_content_description"
+                />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.12"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:id="@+id/notes_container"
+            >
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                >
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/bg_hidden_note_training"
+                            android:textColor="@color/trainingNotesColor"
+                            android:layout_marginEnd="@dimen/cards_notes_distance"
+                            android:layout_marginRight="@dimen/cards_notes_distance"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/card_note_one"
+                    />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/bg_hidden_note_training"
+                            android:textColor="@color/trainingNotesColor"
+                            android:layout_marginEnd="@dimen/cards_notes_distance"
+                            android:layout_marginRight="@dimen/cards_notes_distance"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/card_note_two"
+                    />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/bg_hidden_note_training"
+                            android:textColor="@color/trainingNotesColor"
+                            android:layout_marginEnd="@dimen/cards_notes_distance"
+                            android:layout_marginRight="@dimen/cards_notes_distance"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/card_note_three"
+                    />
+
+                    <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@mipmap/bg_hidden_note_training"
+                            android:textColor="@color/trainingNotesColor"
+                            android:gravity="center"
+                            android:textStyle="bold"
+                            android:id="@+id/card_note_four"
+                    />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.45"
+            >
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                >
+                    <android.support.v4.widget.Space
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.05"
+                    />
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="horizontal"
+                            android:layout_weight="0.95"
+                            android:weightSum="7"
+                            android:baselineAligned="false">
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/key1"
+                                android:padding="2dp"
+                                android:layout_weight="1"
+                                android:weightSum="1">
+
+                            <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:id="@+id/do_button"
+                                    android:layout_weight="0.65"
+                                    android:background="@drawable/key_shape_selector"
+                            />
+
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:contentDescription="@string/world_image_description"
+                                    android:paddingTop="3dp"
+                                    android:layout_weight="0.1"
+                                    android:src="@mipmap/ic_line_note"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:gravity="center"
+                                      android:layout_weight="0.15"
+                                      android:textStyle="bold"
+                                      android:textSize="25sp"
+                                      android:textColor="@color/noteLetterColor"
+                                      android:text="@string/do_letter"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:gravity="center"
+                                      android:layout_weight="0.1"
+                                      android:textColor="@color/noteTextColor"
+                                      android:text="@string/do_text"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:id="@+id/key2"
+                                android:padding="2dp"
+                                android:layout_weight="1"
+                                android:weightSum="1">
+
+                            <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:id="@+id/re_button"
+                                    android:background="@drawable/key_shape_selector"
+                                    android:layout_weight="0.65"/>
+
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:paddingTop="3dp"
+                                    android:layout_weight="0.1"
+                                    android:contentDescription="@string/world_image_description"
+                                    android:src="@mipmap/ic_line_note"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="0.15"
+                                      android:gravity="center"
+                                      android:textColor="@color/noteLetterColor"
+                                      android:textStyle="bold"
+                                      android:textSize="25sp"
+                                      android:text="@string/re_letter"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:gravity="center"
+                                      android:layout_weight="0.1"
+                                      android:textColor="@color/noteTextColor"
+                                      android:text="@string/re_text"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:id="@+id/key3"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:weightSum="1">
+
+                            <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:id="@+id/mi_button"
+                                    android:background="@drawable/key_shape_selector"
+                                    android:layout_weight="0.65"/>
+
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:paddingTop="3dp"
+                                    android:layout_weight="0.1"
+                                    android:contentDescription="@string/world_image_description"
+                                    android:src="@mipmap/ic_line_note"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="0.15"
+                                      android:gravity="center"
+                                      android:textColor="@color/noteLetterColor"
+                                      android:textStyle="bold"
+                                      android:textSize="25sp"
+                                      android:text="@string/mi_letter"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:gravity="center"
+                                      android:layout_weight="0.1"
+                                      android:textColor="@color/noteTextColor"
+                                      android:text="@string/mi_text"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:id="@+id/key4"
+                                android:weightSum="1">
+
+                            <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:id="@+id/fa_button"
+                                    android:background="@drawable/key_shape_selector"
+                                    android:layout_weight="0.65"/>
+
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:paddingTop="3dp"
+                                    android:layout_weight="0.1"
+                                    android:contentDescription="@string/world_image_description"
+                                    android:src="@mipmap/ic_line_note"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="0.15"
+                                      android:gravity="center"
+                                      android:textColor="@color/noteLetterColor"
+                                      android:textStyle="bold"
+                                      android:textSize="25sp"
+                                      android:text="@string/fa_letter"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:gravity="center"
+                                      android:layout_weight="0.1"
+                                      android:textColor="@color/noteTextColor"
+                                      android:text="@string/fa_text"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:padding="2dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:id="@+id/key5"
+                                android:weightSum="1">
+
+                            <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:id="@+id/sol_button"
+                                    android:background="@drawable/key_shape_selector"
+                                    android:layout_weight="0.65"/>
+
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:paddingTop="3dp"
+                                    android:layout_weight="0.1"
+                                    android:contentDescription="@string/world_image_description"
+                                    android:src="@mipmap/ic_line_note"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="0.15"
+                                      android:gravity="center"
+                                      android:textColor="@color/noteLetterColor"
+                                      android:textStyle="bold"
+                                      android:textSize="25sp"
+                                      android:text="@string/so_letter"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:gravity="center"
+                                      android:layout_weight="0.1"
+                                      android:textColor="@color/noteTextColor"
+                                      android:text="@string/sol_text"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:id="@+id/key6"
+                                android:weightSum="1">
+
+                            <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:id="@+id/la_button"
+                                    android:background="@drawable/key_shape_selector"
+                                    android:layout_weight="0.65"/>
+
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:paddingTop="3dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.1"
+                                    android:contentDescription="@string/world_image_description"
+                                    android:src="@mipmap/ic_line_note"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="0.15"
+                                      android:gravity="center"
+                                      android:textColor="@color/noteLetterColor"
+                                      android:textStyle="bold"
+                                      android:textSize="25sp"
+                                      android:text="@string/la_letter"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:gravity="center"
+                                      android:layout_weight="0.1"
+                                      android:textColor="@color/noteTextColor"
+                                      android:text="@string/la_text"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                                android:orientation="vertical"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:padding="2dp"
+                                android:id="@+id/key7"
+                                android:weightSum="1">
+
+                            <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="0dp"
+                                    android:id="@+id/si_button"
+                                    android:background="@drawable/key_shape_selector"
+                                    android:layout_weight="0.65"/>
+
+                            <ImageView
+                                    android:layout_width="match_parent"
+                                    android:paddingTop="3dp"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.1"
+                                    android:contentDescription="@string/world_image_description"
+                                    android:src="@mipmap/ic_line_note"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:layout_weight="0.15"
+                                      android:gravity="center"
+                                      android:textColor="@color/noteLetterColor"
+                                      android:textStyle="bold"
+                                      android:textSize="25sp"
+                                      android:text="@string/si_letter"/>
+
+                            <TextView android:layout_width="match_parent"
+                                      android:layout_height="0dp"
+                                      android:gravity="center"
+                                      android:layout_weight="0.1"
+                                      android:textColor="@color/noteTextColor"
+                                      android:text="@string/si_text"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                >
+
+                    <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_gravity="bottom"
+                            android:orientation="horizontal"
+                            android:layout_weight="0.4"
+                            android:weightSum="35"
+                            android:id="@+id/sharp_keys"
+                    >
+
+                        <android.support.v4.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                        />
+
+                        <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:background="@drawable/sus_key_shape_selector"
+                                android:id="@+id/do_sus"
+                        />
+
+                        <android.support.v4.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                        />
+
+                        <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:background="@drawable/sus_key_shape_selector"
+                                android:id="@+id/re_sus"
+                        />
+
+                        <android.support.v4.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="6"
+                        />
+
+                        <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:background="@drawable/sus_key_shape_selector"
+                                android:id="@+id/fa_sus"
+                        />
+
+                        <android.support.v4.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                        />
+
+                        <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:background="@drawable/sus_key_shape_selector"
+                                android:id="@+id/sol_sus"
+                        />
+
+                        <android.support.v4.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                        />
+
+                        <Button
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="4"
+                                android:background="@drawable/sus_key_shape_selector"
+                                android:id="@+id/la_sus"
+                        />
+
+                        <android.support.v4.widget.Space
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="3"
+                        />
+                    </LinearLayout>
+
+                    <android.support.v4.widget.Space
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.6"
+                    />
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="5dp"
+                    android:gravity="center"
+                    android:layout_weight="0.1">
+                <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/give_up_button"
+                        android:text="@string/leave"
+                        android:background="@drawable/bt_desistir"/>
+            </LinearLayout>
+
+            <com.google.android.gms.ads.AdView
+                    android:id="@+id/adView"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="0.07"
+                    android:layout_gravity="center"
+                    ads:adSize="BANNER"
+                    ads:adUnitId="@string/banner_interstitial_ad_unit_id"
+            />
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v4.widget.DrawerLayout>
