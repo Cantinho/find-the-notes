@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:padding="@dimen/dialog_padding"
+              android:gravity="center">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_win"
+        android:contentDescription="@string/image_description_win_icon"/>
+
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dialog_icon_top_margin"
+            android:textColor="@color/winTextColor"
+            android:textStyle="bold"
+            android:text="@string/congratulations_you_win"/>
+
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dialog_win_starts_top_margin"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_star_center_active"
+                android:contentDescription="@string/image_description_star"
+                android:id="@+id/win_star_left"
+        />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:src="@mipmap/ic_star_center_active"
+                android:contentDescription="@string/image_description_star"
+                android:id="@+id/win_star_middle"
+        />
+
+        <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/ic_star_center_active"
+                android:contentDescription="@string/image_description_star"
+                android:id="@+id/win_star_right"
+        />
+    </LinearLayout>
+
+    <Button
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="@dimen/dialog_button_height"
+            android:id="@+id/bt_next_challenge"
+            android:layout_marginTop="@dimen/dialog_button_top_margin"
+            android:textColor="@color/winButtonTextColor"
+            android:background="@color/winButtonBGColor"
+            android:text="@string/next_challenge"/>
+
+    <com.facebook.share.widget.ShareButton
+        android:id="@+id/facebook_share_btn"
+        android:layout_marginTop="@dimen/dialog_button_top_margin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/share"
+        android:contentDescription="@string/share" />
+
+    <TextView
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="@dimen/dialog_button_height"
+            android:id="@+id/bt_back"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/dialog_back_button_top_margin"
+            android:text="@string/back_to_home"
+            android:textColor="@color/backButtonColor"
+    />
+
+</LinearLayout>

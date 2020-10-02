@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="dialog_icon_top_margin">15dp</dimen>
+    <dimen name="dialog_button_top_margin">15dp</dimen>
+    <dimen name="dialog_win_starts_top_margin">5dp</dimen>
+    <dimen name="dialog_back_button_top_margin">10dp</dimen>
+    <dimen name="dialog_padding">24dp</dimen>
+    <dimen name="dialog_win_button_sides_padding">10dp</dimen>
+    <dimen name="dialog_button_height">35dp</dimen>
+    <dimen name="dialog_button_width">150dp</dimen>
+    <dimen name="cards_notes_distance">6dp</dimen>
+</resources>

@@ -1,0 +1,56 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+    >
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_hidden_note"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="@dimen/cards_notes_distance"
+                android:layout_marginRight="@dimen/cards_notes_distance"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/card_note_one"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_hidden_note"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="@dimen/cards_notes_distance"
+                android:layout_marginRight="@dimen/cards_notes_distance"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/card_note_two"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_hidden_note"
+                android:textColor="@android:color/white"
+                android:layout_marginEnd="@dimen/cards_notes_distance"
+                android:layout_marginRight="@dimen/cards_notes_distance"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/card_note_three"
+        />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_hidden_note"
+                android:textColor="@android:color/white"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:id="@+id/card_note_four"
+        />
+    </LinearLayout>
+
+</merge>

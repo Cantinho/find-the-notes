@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:padding="16dp">
+
+    <android.support.v7.widget.CardView
+            xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@android:color/transparent"
+            card_view:cardElevation="0dp"
+            android:id="@+id/cv_stage" >
+
+        <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stage_background"
+                android:orientation="vertical"
+                android:weightSum="1"
+                android:background ="@mipmap/bg_level_basic">
+
+            <!--TODO remover mock no android:text-->
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:gravity="center"
+                    android:layout_weight="0.7"
+                    android:id="@+id/stage_number"
+                    android:textColor="@android:color/white"
+                    android:textSize="28sp"
+                    android:textStyle="bold"
+                    android:typeface="serif"/>
+
+            <FrameLayout
+                    android:layout_width="match_parent"
+                    android:id="@+id/stars_view"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.3"
+                    android:background="@android:color/transparent">
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/star_right"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:contentDescription="@string/world_image_description"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@mipmap/ic_star_side_active"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/star_left"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginBottom="2dp"
+                        android:contentDescription="@string/world_image_description"
+                        android:layout_gravity="start|center_vertical"
+                        android:src="@mipmap/ic_star_side_active"/>
+
+                <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="3dp"
+                        android:contentDescription="@string/world_image_description"
+                        android:src="@mipmap/ic_star_center_active"
+                        android:id="@+id/star_middle"
+                        android:layout_gravity="center_horizontal|top"/>
+
+                <!--<ImageView-->
+                        <!--android:layout_width="wrap_content"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:layout_gravity="center"-->
+                        <!--android:src="@mipmap/ic_star_center_active"/>-->
+
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>
